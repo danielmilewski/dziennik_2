@@ -1,0 +1,66 @@
+PHP
+
+
+//html <form action= formularz.phpp method="GET" albo "Post"
+// <button type="submit">
+// Wyswietl " <div class="prawy"> <h1>Lista Uczniów</h1> <?php listaUczniow(); ?>
+	
+$conn = mysqli_connect();
+$sql="SLELECT * FROM";
+$wynik = mysqli_query(conn, wynik);
+
+
+while($wiersz=mysqli_fetch_array(wynik))
+	echo "Wiesz id 1".wiersz[0]." !"
+mysqli_close($conn);
+
+if(isset($_GET["imie"]) && $_GET["imie"] != "")
+if(sizeof($_POST)>0)
+
+JS
+
+<button onclick="sprawdzHaslo()">Sprawdz</button>
+var zmienna = zmienna.getElementById("text").value;
+var zmienna2 =zmienna.getElementById("checkbox");
+
+if(zminna2.checked)
+var tablica =  otrzymaneHaslo.split("");	
+
+var length = otrzymaneHaslo.length;
+
+
+//funckja ktora sprawdza zawiera liczbne
+		
+		function sprwadzCyfre(otrzymaneHaslo){
+			//tworzymy tablice  i dzielimy slowa na litery za pomoca funkcji wew JS .split
+			var tablica =  otrzymaneHaslo.split("");
+			// przepisujemy dlugosc tablicy do zmiennej dlugoscTablicy
+			var dlugoscTablicy = tablica.length;
+			// potrzebne jest nam sprawdzicz czy haslo spelnia warunek liczby, 
+			var czyJestCyfra = false;
+			var litera;
+			
+			for(var i = 0; i < dlugoscTablicy; i++){
+				
+				litera = tablica[i];
+				// isNAN jest to funkcja wew JS, ktora sprawdza czy dana zmienna nie jest liczba, jesli nie jest wynik jest true. 
+				// Warunek if sprawdza jesli zmienna litera nie jest liczba to wtedy wynik if jest TRUE
+				if(isNaN(litera) == false){
+				// Jesli warunek if jest TRUE to nada  zmiennej czyJestCyfra wartosc TRUE
+				czyJestCyfra = true			
+			
+				}	
+
+input
+
+	
+<label for="login">Login:</label> <br /> 
+<input type="text" id="login" name="login">  <br /> <br />
+
+<label for="haslo">Hasło:</label> <br /> 
+<input type="password" id="haslo" name="haslo"> <br /> <br />
+
+<input type="checkbox" checked> Akceptuje <a href="regulamin.txt" target="_blank">regulamin</a></input>
+
+<input type="reset" value="WYCZYŚĆ">
+<input type="submit" value="REJESTRUJ">
